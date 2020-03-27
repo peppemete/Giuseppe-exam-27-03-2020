@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+}
+
+.grid{
+    max-width: 1000px;
+    margin:auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.grid-item {
+    margin:10px;
+}
+
+@media (max-width: 750px){
+    .grid{
+        flex-direction: column;
+    }
+
+    .orange{
+        order: 0;
+    }
+
+    .grey {
+        order:1;
+    }
+
+    .blue {
+        order:2;
+    }
+
+    .yellow {
+        order:3;
+    }
+
+}
